@@ -28,11 +28,11 @@
 
 		<link rel="shortcut icon" type="image/x-icon" media="all" href="/_ui/responsive/theme-scott/images/favicon.png" />
 
-		<link rel="stylesheet" type="text/css" media="all" href="/_ui/responsive/theme-scott/css/styles.min.css"/>
+		<link rel="stylesheet" type="text/css" media="all" href="css/styles.min.css"/>
 	<script defer src="https://pro.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-+1nLPoB0gaUktsZJP+ycZectl3GX7wP8Xf2PE/JHrb7X1u7Emm+v7wJMbAcPr8Ge" crossorigin="anonymous"></script>
 
 
-<link href="/_ui/responsive/common/css/angular-csp.css" rel="stylesheet" type="text/css">
+<link href="css/angular-csp.css" rel="stylesheet" type="text/css">
 
 
 <meta property="og:ean" content="7613368404972"/>
@@ -82,7 +82,7 @@
 <a href="/gb/en/country" class="selected_country_flag">
     <div>
         <object height="16" width="28"
-                data="/_ui/responsive/common/images/flags/gb.svg"
+                data="assets/img/gb.svg"
                 type="image/svg+xml"></object>
     </div>
     en</a>
@@ -139,7 +139,7 @@
 				</a>
 			</div>
 			<div class="logo logo-scott">
-	<a href="index.html"><img title="" alt="" src="/_ui/responsive/theme-scott/images/logo.png"></a>
+	<a href="index.html"><img title="" alt="" src="assets/img/logo.png"></a>
 
 </div>
 <nav id="menu">
@@ -866,6 +866,10 @@
     class="sport-item La  AUTO">
     <a href="/gb/en/page/no-shortcuts"  title="NO SHORTCUTS" >NO SHORTCUTS</a></li>
 
+<li data-title="" aria-haspopup="true"
+    class="sport-item La  AUTO">
+    <a href="lookbook.html"  title="NO SHORTCUTS" >#SCOTT</a></li>
+
 </ul>
 </nav>
 <div class="yCmsContentSlot headerContent secondRow">
@@ -1214,6 +1218,596 @@ data-options='{"autocompleteUrl" : "/gb/en/search/autocomplete/SearchBox","minCh
 		</div>
 	</div>
 </div>
+<div class="onlineSizerWrap" id="onlineSizerWrap" style="">
+        <script>
+            var onlineSizer = {
+                    bikeName: "SCOTT Spark 970 Bike",
+                    bikeImageUrl: "https://dfp2hfrf3mn0u.cloudfront.net/269/269761_1431539_png_overview_12.png",
+                    ean: 7613368404972,
+                    widgetUrl: "https://scott.onlinesizer.de/xhr-onlinesizer.en.html",
+                    api: {
+                        url: "https://api.smartfit.bike",
+                        username: "c2NvdHQ=",
+                        password: "ZmhqRmgyNCFwZEJyM0xxWQ=="
+                    },
+                    finish: {
+                        action: onClose,
+                        buttonText: "SAVE AND CLOSE"
+                    },
+                    eanNotFound: customEanNotFoundAction,
+                    eanFound: customEanFoundAction
+                };
+            
+                function customEanNotFoundAction(){
+                    console.log("Ean validation failed for value = 7613368404972");
+                };
+
+                function customEanFoundAction(){
+                    $("#onlineSizerWrap").show();
+                };
+
+                function onClose() {
+                    $(".sizes--btn").each(function(){
+                        if ($(this).text().trim() === onlineSizer.result.replace(" ","")) {
+                            if (!$(this).hasClass("active")) {
+                                $(this).addClass("active");
+                                window.location.href=window.location.origin+$(this).parent().attr("href");
+                            }
+                        } else {
+                            $(this).removeClass("active");
+                        }
+                    });
+                };
+          </script>
+    
+        <h4>Not sure which size you need?</h4>
+        <p>Simply enter your body measurements into the Smartfit bike fitting system to find your ideal size.</p>
+        <div class="smartfit-onlinesizing" id="onlinesizer-target"><div class="onlineSizer__overlay" hidden="">
+  <div class="onlineSizer__overlay__container">
+    <button class="close-button" id="close--onlineSizer" alt="Close">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <path d="M19.7 4.3c-.4-.4-1-.4-1.4 0L12 10.6 5.7 4.3c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l6.3 6.3-6.3 6.3c-.4.4-.4 1 0 1.4.2.2.4.3.7.3s.5-.1.7-.3l6.3-6.3 6.3 6.3c.2.2.5.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4L13.4 12l6.3-6.3c.4-.4.4-1 0-1.4z"></path>
+</svg>
+
+    </button>
+
+    <aside class="onlineSizer__progress">
+  <ol>
+    <li data-screen="screen--bodyheight" class="progress__bubble active">1</li>
+    <li data-screen="screen--armlength" class="progress__bubble">2</li>
+    <li data-screen="screen--inseam" class="progress__bubble">3</li>
+  </ol>
+</aside>
+
+
+    <main class="onlineSizer__screens">
+      <article id="screen--bodyheight" class="onlineSizer__screen onlineSizer__screen--bodyheight">
+  <div class="screen__content">
+    <h1>We will find the perfect size for your <span class="bike-name">SCOTT Spark 970 Bike</span></h1>
+
+    <form class="screen__form" id="screen__form--bodyheight">
+      <div class="screen__question">
+        <h2>Gender</h2>
+
+        <ul class="toggle firstGender--">
+          <li class="toggle__item">
+            <input class="gender-toggle" type="radio" name="gender" id="male" value="1" checked="">
+            <label for="male">Male</label>
+          </li>
+
+          <li class="toggle__item">
+            <input class="gender-toggle" type="radio" name="gender" id="female" value="0">
+            <label for="female">Female</label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="screen__question">
+        <h2>Body height</h2>
+
+        <div class="rangeslider-wrap">
+          <input id="slider--bodyheight" class="rangeslider--size" type="range">
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <figure class="screen__help">
+    <div class="help-image help-image--male">
+      <svg class="" width="330" height="480" viewBox="0 0 330 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient x1="2.222%" y1="50%" y2="50%" id="man-bodyHeight-fill-gradient">
+      <stop class="area-highlight-fill" stop-color="#09F" stop-opacity="0" offset="0%"></stop>
+      <stop class="area-highlight-fill" stop-color="#09F" stop-opacity="0" offset="40.956%"></stop>
+      <stop class="area-highlight-fill" stop-color="#09F" stop-opacity=".047" offset="100%"></stop>
+    </linearGradient>
+    <linearGradient x1="0%" y1="50%" y2="50%" id="man-bodyHeight-stroke-gradient">
+      <stop class="area-highlight-stroke" stop-color="#80C3F3" stop-opacity="0" offset="0%"></stop>
+      <stop class="area-highlight-stroke" stop-color="#4A90E2" offset="100%"></stop>
+    </linearGradient>
+  </defs>
+  <g id="man-body-height" fill="none" fill-rule="evenodd">
+    <path id="meassurement" stroke="url(#man-bodyHeight-stroke-gradient)" fill="url(#man-bodyHeight-fill-gradient)" d="M72 49h186.082v383H72"></path>
+    <g class="body-fill body-outline" transform="translate(100 49)" stroke="#4D4D4D" stroke-linecap="round">
+      <path d="M53.656 41.833V55.99l-12.05 6.335 8.802.904c-7.882-1.28-14.2-.63-18.916.26-7.074 1.334-16.868 5.924-17.674 16.898-.806 10.974-.046 13.372-.558 18.065-.511 4.692-2.113 11.244-2.113 20.42 0 9.176-2.146 11.984-3.901 19.917-1.756 7.932-.76 15.265-1.417 34.754-.658 19.49-.163 28.658.259 31.85.422 3.191 2.326 7.176 4.749 9.052 2.423 1.876 9.884 4.49 9.884 2.941 0-1.548-6.903-6.651-7.46-8.802-.558-2.15.484-7.084 2.044-7.084.786 0 2.81 13.354 5.416 10.896 2.604-2.458 1.284-16.274.73-17.935-.552-1.66-4.597-7.14-4.89-8.712-.806-4.322 3.348-15.376 6.252-27.107 2.904-11.73 3.148-22.522 3.833-31.43.684-8.908 3.502-10.238 4.846-30.68 0 24.626 3.638 27.263 3.638 36.963s-2.092 13.675-1.75 19.078c.34 5.403-4.865 20.091-4.865 28.963s-.3 29.53.667 42.493c.966 12.962 6.504 27.654 6.504 34.888 0 7.234.507 14.099-.556 20.865-1.064 6.767-1.75 24.547 4.024 41.355 5.775 16.81 6.092 20.334 6.092 29.77 0 9.435-6.64 12.005-6.64 20.446 0 2.506.755 2.362 2.263-.432-.762 3.493-.835 5.339-.217 5.537.618.198 1.592-.97 2.923-3.502-1.03 3.346-1.206 5.308-.527 5.885 1.02.866 2.415.076 3.81-4.141-1.514 4.385-.614 6.56.879 6.56.995 0 1.886-2.05 2.67-6.148.077 4.83.95 7.146 2.623 6.947 3.764-.45 4.083-7.231 4.083-13.796 0-6.565 1.66-13.776 1.66-15.511 0-1.735-1.35-11.895-2.438-23.872-1.088-11.978.932-18.593.932-28.304 0-9.71-1.622-13.14-1.622-16.247 0-3.108 1.225-5.21 2.176-14.736.951-9.526.822-15.71 1.463-21.804.641-6.095 2.597-15.247 3.293-29.309.464-9.374.464-16.118 0-20.232 5.093 4.114 5.093 10.858 5.556 20.232.696 14.062 2.652 23.214 3.294 29.31.64 6.094.511 12.277 1.462 21.803.951 9.526 2.177 11.628 2.177 14.736 0 3.107-1.623 6.537-1.623 16.247s2.02 16.326.932 28.304c-1.088 11.977-2.437 22.137-2.437 23.872 0 1.735 1.66 8.946 1.66 15.511 0 6.565.319 13.347 4.082 13.796 1.673.199 2.547-2.117 2.623-6.947.785 4.098 1.675 6.147 2.67 6.147 1.494 0 2.393-2.174.88-6.56 1.394 4.218 2.79 5.008 3.809 4.142.68-.577.504-2.54-.527-5.885 1.331 2.533 2.305 3.7 2.923 3.502.618-.198.546-2.044-.217-5.537 1.509 2.794 2.263 2.938 2.263.432 0-8.44-6.64-11.011-6.64-20.447 0-9.435.318-12.96 6.092-29.769 5.775-16.808 5.088-34.588 4.025-41.355-1.064-6.766-.557-13.631-.557-20.865 0-7.234 5.538-21.926 6.505-34.888.966-12.963.666-33.62.666-42.493 0-8.872-5.205-23.56-4.864-28.963.341-5.403-1.75-9.378-1.75-19.078s3.637-12.337 3.637-36.962c1.344 20.44 4.163 21.77 4.847 30.679.684 8.908.928 19.7 3.832 31.43 2.904 11.731 7.059 22.785 6.252 27.107-.293 1.573-4.338 7.051-4.89 8.712-.553 1.661-1.874 15.477.73 17.935 2.606 2.458 4.63-10.896 5.416-10.896 1.56 0 2.602 4.934 2.045 7.084-.557 2.15-7.46 7.254-7.46 8.802s7.46-1.065 9.883-2.941c2.424-1.876 4.328-5.86 4.75-9.052.421-3.192.916-12.36.259-31.85-.658-19.49.338-26.822-1.417-34.754-1.756-7.933-3.902-10.741-3.902-19.917 0-9.176-1.602-15.728-2.113-20.42-.511-4.693.248-7.091-.557-18.065-.806-10.974-10.6-15.564-17.675-16.899-4.716-.89-11.033-1.539-18.915-.26l8.802-.903-12.05-6.335V41.833H53.655z" id="body" fill="#FFF" stroke-linejoin="round"></path>
+      <path d="M31.712 88.313c.402 1.09.402 2.375 0 3.858-.602 2.224.644 8.189 5.415 11.368 4.772 3.18 8.598 3.366 12.744 3.366 2.765 0 6.26-1.122 10.486-3.366" id="left-boob" fill="#FFF" stroke-linejoin="round" transform="rotate(-11 45.964 97.61)"></path>
+      <path d="M71.64 88.313c.402 1.09.402 2.375 0 3.858-.602 2.224.644 8.189 5.416 11.368 4.771 3.18 8.597 3.366 12.744 3.366 2.765 0 6.26-1.122 10.486-3.366" id="right-boob" fill="#FFF" stroke-linejoin="round" transform="scale(-1 1) rotate(-11 0 989.64)"></path>
+      <path d="M77.885 42.651c1.57-1.838 6.67-15.8 3.996-28.998C80.099 4.854 74.626.303 65.464 0 56.302.303 50.83 4.854 49.048 13.653c-2.674 13.197 2.425 27.16 3.995 28.998 1.57 1.838 9.322 6.631 12.421 6.618 3.1.013 10.851-4.78 12.421-6.618z" id="head" fill="#FFF" stroke-linejoin="round" transform="matrix(-1 0 0 1 130.929 0)"></path>
+      <path d="M57.571 197.078c1.562 4.248 4.034 6.416 7.418 6.504 3.384.088 6.173-2.08 8.368-6.504" id="crotch" fill="#FFF" stroke-linejoin="round"></path>
+      <path d="M39.132 272.376c-.592 5.023.808 8.194 4.2 9.514 3.39 1.32 6.28.805 8.668-1.544" id="left-knee" fill="#FFF" stroke-linejoin="round"></path>
+      <path d="M78.132 272.376c-.592 5.023.808 8.194 4.2 9.514 3.39 1.32 6.28.805 8.668-1.544" id="right-knee" fill="#FFF" stroke-linejoin="round" transform="matrix(-1 0 0 1 169 0)"></path>
+      <path d="M42.714 66.002c5.68.924 9.814 1.385 12.401 1.385 3.88 0 6.452-.692 6.933-.692.482 0 1.734 3.025 3.277 3.025 1.821.067 3.073-2.958 3.555-2.958.482 0 3.053.693 6.933.693 2.587 0 6.72-.462 12.401-1.385" id="brustbein"></path>
+    </g>
+  </g>
+</svg>
+
+    </div>
+
+    <div class="help-image help-image--female hidden">
+      <svg width="330" height="480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient x1="2.222%" y1="50%" y2="50%" id="woman-bodyHeight-fill-gradient">
+      <stop class="area-highlight-fill" stop-color="#09F" stop-opacity="0" offset="0%"></stop>
+      <stop class="area-highlight-fill" stop-color="#09F" stop-opacity="0" offset="40.956%"></stop>
+      <stop class="area-highlight-fill" stop-color="#09F" stop-opacity=".047" offset="100%"></stop>
+    </linearGradient>
+    <linearGradient x1="0%" y1="50%" y2="50%" id="woman-bodyHeight-stroke-gradient">
+      <stop class="area-highlight-stroke" stop-color="#80C3F3" stop-opacity="0" offset="0%"></stop>
+      <stop class="area-highlight-stroke" stop-color="#4A90E2" offset="100%"></stop>
+    </linearGradient>
+  </defs>
+  <g id="woman-body-height" fill="none" fill-rule="evenodd">
+    <path id="meassurement" stroke="url(#woman-bodyHeight-stroke-gradient)" fill="url(#woman-bodyHeight-fill-gradient)" d="M72 49h186.082v386H72"></path>
+    <g id="lady-arme-unten-offene-hand" transform="translate(96 32)" stroke="#4D4D4D">
+      <path id="body" class="body-fill body-outline" d="M60.727 59.644s1.801 4.877-1.172 9.003c-4.89 5.898-18.377 7.12-24.233 10.31-5.855 3.19-7.717 9.33-7.717 13.539.013 6.119-1.177 17.153-1.472 26.898-.295 9.745-1.115 16.204-.85 18.25.265 2.045-4.147 12.129-4.83 20.278-.683 8.149 0 24.475-.468 31.831-.132 2.076-.164 2.609-.622 5.228-.051.293.058 2.281.328 5.966-.731 4.015-1.097 7.732-1.097 11.149 0 5.125.812 12.055 5.149 15.137 1.714 1.219 6.993 5.194 6.993 3.287 0-1.253-6.453-5.19-6.453-11.07 0-2.138 1.864-7.824 2.954-6.851.964.86.728 6.511 1.414 8.871.686 2.36 3.085 3.985 3.085 2.36s0-10.828-1.096-16.553c-.298-1.554-1.52-4.344-2.255-7.58-.212-.932-.31-2.504-.297-4.716 2.11-8.61 5.2-22.466 7.948-33.216 2.078-8.13 2.97-18.14 3.88-24.52.607-4.254 1.39-11.304 2.349-21.15.732 11.81 1.957 20.809 3.676 26.995 2.578 9.279 1.064 12.68-4.494 25.628-5.558 12.947-8.154 28.62-7.328 40.062.827 11.441 5.064 34.485 6.595 46.338 1.53 11.853 5.227 22.314 4.123 35.31-1.104 12.997-1.926 20.412 0 31.434 1.926 11.022 9.256 37.027 9.256 47.907 0 10.88-11.828 19.503-11.828 20.673 0 .78 1.071.554 3.214-.678-2.003 2.277-2.629 3.56-1.878 3.848.75.288 2.115-.515 4.094-2.41-2.31 2.773-3.048 4.317-2.216 4.63.833.313 2.283-.663 4.352-2.93-2.206 3.478-2.918 5.381-2.136 5.71.78.33 2.55-1.337 5.304-5-3.314 5.012-3.823 7.517-1.527 7.517 3.444 0 7.972-10.902 10.217-14.436 2.245-3.535 3.462-1.918 4.585-5.27 1.122-3.352-1.318-6.85-1.366-7.786-.09-1.721-2.058-16.597-1.272-29.542.786-12.944 2.03-16.863 2.03-28.327 0-11.463-3.302-16.814-3.302-22.736 0-5.923 1.918-18.506 2.544-33.558.625-15.053 1.88-34.607 1.88-45.459 2.141 2.47 4.168 2.47 6.079 0 1.154 22.377 1.896 37.53 2.225 45.459.626 15.052 2.544 27.635 2.544 33.558 0 5.922-3.302 11.273-3.302 22.736 0 11.464 1.244 15.383 2.03 28.327.786 12.945-1.182 27.821-1.272 29.542-.048.935-2.488 4.434-1.366 7.786 1.123 3.352 2.34 1.735 4.585 5.27 2.245 3.534 6.773 14.436 10.217 14.436 2.296 0 1.787-2.505-1.527-7.517 2.755 3.663 4.523 5.33 5.304 5 .782-.329.07-2.232-2.136-5.71 2.069 2.267 3.52 3.243 4.352 2.93.832-.313.094-1.857-2.216-4.63 1.979 1.895 3.344 2.698 4.094 2.41.751-.288.125-1.571-1.878-3.848 2.143 1.232 3.214 1.458 3.214.678 0-1.17-11.828-9.793-11.828-20.673 0-10.88 7.33-36.885 9.256-47.907 1.926-11.022 1.104-18.437 0-31.433-1.104-12.997 2.592-23.458 4.123-35.311 1.53-11.853 5.768-34.897 6.595-46.338.826-11.442-1.77-27.115-7.328-40.062s-7.072-16.35-4.494-25.628c1.719-6.186 2.944-15.185 3.676-26.996.96 9.847 1.742 16.897 2.35 21.151.91 6.38 1.8 16.39 3.879 24.52 2.747 10.75 5.838 24.606 7.948 33.216.014 2.212-.085 3.784-.297 4.715-.735 3.237-1.957 6.027-2.255 7.581-1.096 5.725-1.096 14.928-1.096 16.553s2.399 0 3.085-2.36c.686-2.36.45-8.011 1.414-8.871 1.09-.973 2.954 4.713 2.954 6.851 0 5.88-6.357 9.817-6.357 11.07 0 1.907 5.416-2.143 7.093-3.822 3.856-3.86 5.05-10.865 5.05-15.99 0-3.418-.399-6.671-1.194-9.761.27-3.685.379-5.673.328-5.966-.458-2.62-.49-3.152-.622-5.228-.468-7.356.215-23.682-.468-31.831-.683-8.15-5.095-18.233-4.83-20.278.265-2.046-.555-8.505-.85-18.25-.295-9.745-1.485-20.779-1.472-26.898 0-4.208-1.862-10.35-7.717-13.54-5.856-3.19-19.343-4.41-24.233-10.31-2.973-4.125-1.172-9.002-1.172-9.002" stroke-linejoin="round"></path>
+      <path id="left-boob" class="body-fill body-outline" d="M42.56 106.359c-1.378 2.705-1.378 5.858 0 9.46 2.066 5.402 7.237 7.393 12.106 7.393 3.245 0 6.746-1.314 10.501-3.943" stroke-linecap="round" stroke-linejoin="bevel"></path>
+      <path id="right-boob" class="body-fill body-outline" d="M75.866 106.359c-1.378 2.705-1.378 5.858 0 9.46 2.067 5.402 7.238 7.393 12.107 7.393 3.245 0 6.746-1.314 10.501-3.943" stroke-linecap="round" stroke-linejoin="bevel" transform="matrix(-1 0 0 1 173.307 0)"></path>
+      <path id="brustbein" class="body-fill body-outline" d="M53.059 81c3.965.604 6.851.906 8.657.906 2.71 0 4.504-.453 4.84-.453.337 0 1.21 1.979 2.288 1.979 1.272.044 2.145-1.935 2.482-1.935.336 0 2.131.453 4.84.453 1.806 0 4.692-.302 8.658-.906" stroke-linecap="round"></path>
+      <path id="head" class="body-fill body-outline" d="M54 37.866C53.927 25.074 59.26 18.452 70 18c10.74.452 16.074 7.074 16 19.866-.518 15.96-5.851 25.005-16 27.134-10.149-2.13-15.482-11.174-16-27.134z" stroke-linecap="round"></path>
+    </g>
+  </g>
+</svg>
+
+    </div>
+
+    <figcaption>Body height</figcaption>
+
+    <div class="help">
+      <a class="help__bubble">?</a>
+      <article class="help__popup hidden">
+        <button class="help__popup__close close-button" alt="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <path d="M19.7 4.3c-.4-.4-1-.4-1.4 0L12 10.6 5.7 4.3c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l6.3 6.3-6.3 6.3c-.4.4-.4 1 0 1.4.2.2.4.3.7.3s.5-.1.7-.3l6.3-6.3 6.3 6.3c.2.2.5.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4L13.4 12l6.3-6.3c.4-.4.4-1 0-1.4z"></path>
+</svg>
+
+        </button>
+
+        <h2>Measure your body height:</h2>
+
+        <p>Without shoes, stand up straight with the back against a wall.</p>
+
+<p>Now measure from the floor to the top of your head.</p>
+
+<p>That’s your body height.</p>
+
+      </article>
+    </div>
+  </figure>
+
+  <nav class="button-bar">
+  <a href="#" id="btn--bodyheight" class="button button--next-screen">
+    Next
+  </a>
+</nav>
+
+
+  <a class="toggle-help">
+  <span class="front">?</span>
+  <span class="back">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+      <polygon points="6.7,14.7 8.1,13.3 3.8,9 16,9 16,7 3.8,7 8.1,2.7 6.7,1.3 0,8 "></polygon>
+    </svg>
+  </span>
+</a>
+
+</article>
+<!-- end screen -->
+
+      <article id="screen--armlength" class="onlineSizer__screen onlineSizer__screen--armlength" hidden="">
+  <div class="screen__content">
+    <h1>We will find the perfect size for your <span class="bike-name">SCOTT Spark 970 Bike</span></h1>
+
+    <form class="screen__form" id="screen__form--armlength">
+      <div class="screen__question">
+        <h2>Arm length</h2>
+
+        <div class="rangeslider-wrap">
+          <input id="slider--armlength" class="rangeslider--size rangerslider--xhr" type="range" step="1">
+        </div>
+
+        <p class="slider-hints">
+          <span class="slider-hint slider-hint--median">
+            The average arm length for your height
+          </span>
+
+          <span class="slider-hint slider-hint--too-low" style="display: none;">
+            Your arm length is below average. Did you measure correctly?
+          </span>
+
+          <span class="slider-hint slider-hint--too-high" style="display: none;">
+            Your arm length is above average. Did you measure correctly?
+          </span>
+        </p>
+      </div>
+    </form>
+  </div>
+
+  <figure class="screen__help">
+    <div class="help-image help-image--male">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="330" height="480" class="" viewBox="0 0 330 480">
+    <defs>
+        <path id="man-arm-length-arm-shape" d="M76.986 116c4.293 0 20.109 1.552 22.729 16.906 2.62 15.353-4.242 26.64-4.242 38.489 0 11.847 1.874 18.36 1.874 29.201 0 10.841-7.427 29.494-7.427 55.18 0 25.684-21.613 57.751-24.06 65.224-2.446 7.473-15.73 2.354-15.542.222 1.045-11.8-1.157-38.677 3.235-53.804 5.186-17.86 8.942-22.87 8.576-27.956-.365-5.086-8.576-25.47-8.576-46.769 0-21.298 2.371-28.87 1.947-30.124-.424-1.255-4.656-15.357-3.601-24.54C52.954 128.846 58.622 116 73.596 116"></path>
+        <linearGradient id="man-armLength-fill-gradient" x1="2.222%" y1="50%" y2="50%">
+            <stop class="area-highlight-fill" offset="0%" stop-color="#09F" stop-opacity="0"></stop>
+            <stop class="area-highlight-fill" offset="40.956%" stop-color="#09F" stop-opacity="0"></stop>
+            <stop class="area-highlight-fill" offset="100%" stop-color="#09F" stop-opacity=".047"></stop>
+        </linearGradient>
+        <linearGradient id="man-armLength-stroke-gradient" x1="0%" y1="50%" y2="50%">
+            <stop class="area-highlight-stroke" offset="0%" stop-color="#80C3F3" stop-opacity="0"></stop>
+            <stop class="area-highlight-stroke" offset="100%" stop-color="#4A90E2"></stop>
+        </linearGradient>
+    </defs>
+    <g id="man-arm-length" fill="none" fill-rule="evenodd">
+        <g id="Group" stroke-linecap="round" transform="translate(114 51)">
+            <path id="body-2" fill="#FFF" stroke="#4D4D4D" stroke-linejoin="round" d="M40.212 90.47c1.042 14.221 1.042 21.758 0 22.61-1.562 1.276-13.232 9.552-22.263 22.113C8.917 147.755 2 157.045 1.183 165.993c-.817 8.946-1.404 32.24-1.103 59.711.302 27.472 14.027 67.554 13.953 77.087-.075 9.533-1.414 29.954-1.414 50.193 0 20.24 5.579 46.797 12.002 67.412 4.283 13.742 14.662 37.766 31.137 72.072h26.367c2.067-37.962 3.174-67.572 3.323-88.83.148-21.257.222-38.142.222-50.654 7.166-10.436 10.33-21.092 9.493-31.968-.836-10.877-5.182-21.824-13.038-32.841l-3.09-144.917 21.53-10.435c-2.708-8.218-6.637-15.107-11.786-20.666-5.15-5.559-10.893-11.36-17.23-17.406l.883-34.259-32.22 29.979z"></path>
+            <path id="body-1" fill="#FFF" stroke="#4D4D4D" stroke-linejoin="round" d="M63.588 75.52c-4.187 5.224-7.48 8.43-9.881 9.617-3.601 1.782-28.68 9.129-31.247 5.807-1.711-2.215-4.056-9.52-7.034-21.915-4.75-1.754-7.508-3.39-8.275-4.908-.768-1.519 1.395-6.038 6.487-13.559-.223-16.114 1.85-28.15 6.217-36.108C26.406 2.517 38.305 0 51.995 0 65.685 0 88.97 6.07 88.97 35.456c0 29.384-16.748 36.277-16.748 45.748 0 9.47-1.753 11.02.715 15.438 2.468 4.418 26.467 20.025 27.374 36.514"></path>
+            <g id="man-arm-length-arm" transform="translate(1 0)">
+                <use fill="#FFF" xlink:href="#man-arm-length-arm-shape"></use>
+                <use fill="#09F" fill-opacity=".1" class="body-highlight" xlink:href="#man-arm-length-arm-shape"></use>
+                <use stroke="#09F" class="body-highlight-outline" xlink:href="#man-arm-length-arm-shape"></use>
+            </g>
+            <path id="hand" fill="#FFF" stroke="#4D4D4D" stroke-linejoin="round" d="M49.322 316.935a8.997 8.997 0 0 0-3.006.942c-4.806 2.48-5.903 6.367-10.349 12.653-4.445 6.286-12.025 12.483-9.73 13.64 2.296 1.157 5.454.17 8.322-2.319 2.869-2.489 7.224-8.088 7.224-3.92 0 4.166-12.165 22.324-9.344 25.166 2.821 2.842 10.65-16.42 12.637-15.167 1.988 1.254-6.88 23.015-3.293 24.837 3.586 1.823 7.672-20.44 9.58-20.628 1.907-.189-1.516 20.628 1.907 20.628s2.374-21.332 4.656-21.624c2.283-.291-.407 16.279 2.99 16.048 3.398-.23 1.228-17.67 2.387-21.327 1.159-3.658 2.907-7.959 2.352-14.767-.37-4.539-1.715-8.328-4.034-11.368" transform="rotate(6 45.788 344.904)"></path>
+        </g>
+        <path id="meassurement" fill="url(#man-armLength-fill-gradient)" stroke="url(#man-armLength-stroke-gradient)" d="M132 167h126v205H132"></path>
+    </g>
+</svg>
+
+    </div>
+
+    <div class="help-image help-image--female hidden">
+      <svg class="" width="330" height="480" viewBox="0 0 330 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <path d="M178.372 167c16.746 0 19.464 28.63 16.68 55.188-2.784 26.56-6.701 41.387-6.701 49.207s2.94 18.455 2.083 40.46c-.57 14.67-3.165 36.051-7.782 64.145l-13.306-1.838c-2.694-24.913-4.188-43.974-4.483-57.185-.442-19.816 2.453-40.314 2.453-46.396 0-6.083-4.287-31.038-4.287-53.195S161.626 167 178.372 167z" id="woman-arm-length-shape"></path>
+    <linearGradient x1="2.222%" y1="50%" y2="50%" id="woman-armLength-fill-gradient">
+      <stop class="area-highlight-fill" stop-color="#09F" stop-opacity="0" offset="0%"></stop>
+      <stop class="area-highlight-fill" stop-color="#09F" stop-opacity="0" offset="40.956%"></stop>
+      <stop class="area-highlight-fill" stop-color="#09F" stop-opacity=".1" offset="100%"></stop>
+    </linearGradient>
+    <linearGradient x1="0%" y1="50%" y2="50%" id="woman-armLength-stroke-gradient">
+      <stop class="area-highlight-stroke" stop-color="#80C3F3" stop-opacity="0" offset="0%"></stop>
+      <stop class="area-highlight-stroke" stop-color="#4A90E2" offset="100%"></stop>
+    </linearGradient>
+  </defs>
+  <g id="woman-arm-length" fill="none" fill-rule="evenodd">
+    <path id="body" class="body-fill body-outline" d="M184.493 115c-.407 11.497.127 21.702 1.604 30.615 2.214 13.37 17.403 27.932 18.982 46.375 1.578 18.442-5.886 37.586-8.42 77.228-2.536 39.641-3.947 45.73 0 54.557 3.946 8.825 17.293 27.143 16.287 45.99-1.006 18.848-11.428 30.505-12.847 44.615-1.42 14.11-3.645 32.918-6.389 52.942-2.743 20.024-6.536 34.654-5.411 52.484 1.124 17.83 9.703 33.216 9.948 57.867.246 24.651-15.099 55.846-15.099 88.942 0 18.571 2.949 23.932 2.949 29.375 0 5.442-6.397 7.009-23.71 5.402-13.183-.796-17.163 1.664-27.957 1.607-10.795-.057-16.346-4.865-16.429-6.106-.083-1.24 5.08-1.154 11.645-3.64 6.565-2.485 20.736-10.08 26.716-17.26 5.98-7.178 7.94-27.585 7.94-59.352 0-31.767-6.972-74.372-9.822-87.231-2.85-12.859-14.331-47.563-17.845-76.093-3.515-28.53-7.186-52.628-5.419-71.654 1.768-19.027 4.16-37.623 2.422-68.789-1.737-31.165 1.312-57.832 0-59.753-1.312-1.92-15.407-6.375-13.83-23.072.479-8.77 13.45-24.56 24.012-35.848 10.562-11.287 14.043-31.185 14.639-45.143.397-9.305-.302-16.12-2.097-20.447L184.493 115z" stroke="#4D4D4D" fill="#FFF" stroke-linecap="round"></path>
+    <path id="head" class="body-fill body-outline" d="M164.218 50c15.13 0 33.682 3.617 36.597 32.374 2.915 28.758-29.4 47.795-47.302 54.925-17.902 7.13-20.054-1.027-23.271-10.86-1.142-3.49-1.95-9.322-2.347-14.665-.058-.773-4.85-1.815-4.89-2.613-.178-3.53 4.56-7.029 4.748-10.852.302-6.164 1.104-12.507 2.489-18.383C134.022 63.887 149.087 50 164.218 50z" stroke="#4D4D4D" fill="#FFF" stroke-linecap="round"></path>
+    <g id="arm" stroke-linecap="round">
+      <use class="body-highlight" fill-opacity=".1" fill="#09F" xlink:href="#woman-arm-length-shape"></use>
+      <use class="body-highlight-outline" stroke="#09F" xlink:href="#woman-arm-length-shape"></use>
+    </g>
+    <g id="left-hand" transform="rotate(-20 1153.414 -217.65)">
+      <path class="body-fill" d="M28.352.267C23.616 1.34 19.105 4.18 14.82 8.787 7.728 16.128 1.766 19.326.9 20.78c-.868 1.455 1.036 2.034 4.542.992 3.506-1.043 8.321-5.705 9.378-4.543 1.058 1.162-1.06 6.58-4.746 11.751-3.686 5.17-8.699 12.347-6.527 13.273 2.172.926 12.36-15.242 13.185-14.258.825.985-10.849 18.668-7.906 20.422 2.943 1.754 10.685-18.12 13.44-18.12 2.756 0-7.785 18.161-4.62 18.824 3.166.662 9.465-18.139 10.861-17.912 1.396.228-3.212 13.536-.816 13.8 2.395.262 3.441-8.09 5.47-13.099 2.028-5.008 7.21-7.334 8.132-14.681.615-4.898-.006-8.692-1.864-11.384-1.793-1.432-3.592-2.603-5.398-3.513A25.737 25.737 0 0 0 28.352.267z" id="Path-7" fill="#FFF"></path>
+      <path class="body-outline" d="M27.593.286c-4.615.756-9.813 5.633-12.774 8.5C7.728 16.13 1.766 19.326.9 20.781c-.868 1.455 1.036 2.034 4.542.992 3.506-1.043 8.321-5.705 9.378-4.543 1.058 1.162-1.06 6.58-4.746 11.751-3.686 5.17-8.699 12.347-6.527 13.273 2.172.926 12.36-15.242 13.185-14.258.825.985-10.849 18.668-7.906 20.422 2.943 1.754 10.685-18.12 13.44-18.12 2.756 0-7.785 18.161-4.62 18.824 3.166.662 9.465-18.139 10.861-17.912 1.396.228-3.212 13.536-.816 13.8 2.395.262 3.441-8.09 5.47-13.099 2.028-5.008 6.17-8.622 7.7-14.541 1.02-3.946.522-7.89-1.495-11.83" id="Path-7" stroke="#4D4D4D" stroke-linecap="round"></path>
+    </g>
+    <path id="meassurement" stroke="url(#woman-armLength-stroke-gradient)" fill="url(#woman-armLength-fill-gradient)" d="M132 167h126v205H132"></path>
+  </g>
+</svg>
+
+    </div>
+
+    <figcaption>Arm length</figcaption>
+
+    <div class="help">
+      <a class="help__bubble">?</a>
+      <article class="help__popup hidden">
+        <button class="help__popup__close close-button" alt="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <path d="M19.7 4.3c-.4-.4-1-.4-1.4 0L12 10.6 5.7 4.3c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l6.3 6.3-6.3 6.3c-.4.4-.4 1 0 1.4.2.2.4.3.7.3s.5-.1.7-.3l6.3-6.3 6.3 6.3c.2.2.5.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4L13.4 12l6.3-6.3c.4-.4.4-1 0-1.4z"></path>
+</svg>
+
+        </button>
+
+        <h2>Measure your arm length:</h2>
+
+        <p>Relax your left arm and with your right hand, slide over your shoulder blade until you find the <strong>end of your shoulder bone</strong>. Fixate that point with your left hand.</p>
+
+<p>Now measure the distance <strong>from that point to your wrist</strong> with a meter stick.</p>
+
+<p>That’s your arm length.</p>
+
+      </article>
+    </div>
+  </figure>
+
+  <nav class="button-bar">
+  <a href="#" id="btn--armlength" class="button button--next-screen">
+    Next
+  </a>
+</nav>
+
+
+  <a class="toggle-help">
+  <span class="front">?</span>
+  <span class="back">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+      <polygon points="6.7,14.7 8.1,13.3 3.8,9 16,9 16,7 3.8,7 8.1,2.7 6.7,1.3 0,8 "></polygon>
+    </svg>
+  </span>
+</a>
+
+</article>
+<!-- end screen -->
+
+      <article id="screen--inseam" class="onlineSizer__screen onlineSizer__screen--inseam" hidden="">
+  <div class="screen__content">
+    <h1>We will find the perfect size for your <span class="bike-name">SCOTT Spark 970 Bike</span></h1>
+
+    <form class="screen__form" id="screen__form--inseam">
+      <div class="screen__question">
+        <h2>Inner leg length</h2>
+
+        <div class="rangeslider-wrap">
+          <input id="slider--inseam" class="rangeslider--size" type="range" step="1">
+        </div>
+
+        <p class="slider-hints">
+          <span class="slider-hint slider-hint--median">
+            The average leg length for your height
+          </span>
+
+          <span class="slider-hint slider-hint--too-low" style="display: none;">
+            Your inner leg length is below average. Did you measure correctly?
+          </span>
+
+          <span class="slider-hint slider-hint--too-high" style="display: none;">
+            Your inner leg length is above average. Did you measure correctly?
+          </span>
+        </p>
+      </div>
+    </form>
+  </div>
+
+  <figure class="screen__help">
+    <div class="help-image help-image--male">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="330" height="480">
+    <defs>
+        <path id="man-inseam-body-mask-shape" d="M36.709 373.54V420H0V0h220v420h-39.312v-46.46z"></path>
+        <path id="man-inseam-body-shape" d="M85.518.507v24.878L64.29 36.517l15.505 1.587c-13.884-2.248-25.013-1.107-33.32.456C34.013 40.905 16.76 48.97 15.34 68.254c-1.42 19.284-.082 23.498-.982 31.743-.901 8.246-3.722 19.759-3.722 35.882 0 16.124-3.78 21.06-6.873 34.998-3.093 13.938-1.339 26.823-2.497 61.07s-.286 50.357.457 55.965c.743 5.608 4.097 12.61 8.366 15.906 4.269 3.297 17.41 7.889 17.41 5.169 0-2.72-12.16-11.688-13.141-15.467-.982-3.778.853-12.448 3.602-12.448 1.384 0 4.95 23.465 9.54 19.146 4.588-4.319 2.261-28.596 1.287-31.514-.973-2.919-8.098-12.546-8.615-15.31-1.42-7.594 5.898-27.018 11.013-47.631s5.546-39.575 6.751-55.229c1.205-15.653 6.17-17.99 8.538-53.909 0 43.272 6.407 47.905 6.407 64.95 0 17.044-3.684 24.03-3.083 33.524s-8.569 35.303-8.569 50.893c0 15.59-.528 51.89 1.174 74.667 1.703 22.777 11.459 48.593 11.459 61.304 0 12.712.892 24.775-.98 36.665-1.874 11.89-3.084 43.132 7.088 72.668 10.173 29.536 10.731 35.73 10.731 52.31 0 16.58-11.695 21.096-11.695 35.928 0 4.403 1.329 4.15 3.986-.76-1.343 6.14-1.47 9.382-.383 9.73 1.089.348 2.805-1.703 5.15-6.153-1.817 5.88-2.126 9.326-.928 10.34 1.796 1.522 4.253.135 6.709-7.276-2.665 7.705-1.081 11.526 1.55 11.526 1.753 0 3.321-3.6 4.704-10.802.134 8.488 1.674 12.557 4.62 12.207 6.63-.789 7.192-12.706 7.192-24.241 0-11.536 2.923-24.208 2.923-27.257 0-3.049-2.377-20.9-4.294-41.947-1.916-21.047 1.642-32.671 1.642-49.734 0-17.064-2.858-23.09-2.858-28.55 0-5.462 2.159-9.154 3.834-25.894 1.676-16.74 1.447-27.604 2.577-38.313 1.13-10.71 4.575-26.791 5.8-51.5.817-16.474.817-28.324 0-35.552 8.972 7.228 8.972 19.078 9.789 35.551 1.225 24.71 4.671 40.792 5.8 51.501 1.13 10.71.902 21.574 2.577 38.313 1.675 16.74 3.834 20.432 3.834 25.893 0 5.462-2.857 11.487-2.857 28.55 0 17.064 3.557 28.688 1.641 49.735s-4.293 38.898-4.293 41.947c0 3.05 2.922 15.721 2.922 27.257 0 11.535.563 23.452 7.192 24.24 2.947.351 4.487-3.718 4.62-12.206 1.383 7.201 2.951 10.802 4.705 10.802 2.63 0 4.215-3.821 1.55-11.526 2.455 7.411 4.912 8.798 6.709 7.277 1.198-1.015.888-4.462-.928-10.341 2.344 4.45 4.06 6.501 5.149 6.153 1.088-.348.96-3.59-.383-9.73 2.658 4.91 3.986 5.163 3.986.76 0-14.832-11.695-19.349-11.695-35.929 0-16.58.559-22.773 10.731-52.309 10.172-29.536 8.963-60.778 7.09-72.668-1.874-11.89-.981-23.953-.981-36.665 0-12.711 9.756-38.527 11.458-61.304 1.703-22.778 1.174-59.077 1.174-74.667 0-15.59-9.17-41.399-8.569-50.893.601-9.495-3.083-16.48-3.083-33.525 0-17.044 6.408-21.677 6.408-64.949 2.368 35.92 7.332 38.256 8.537 53.91 1.205 15.653 1.636 34.615 6.751 55.228 5.116 20.613 12.434 40.037 11.014 47.631-.517 2.764-7.642 12.391-8.616 15.31-.974 2.918-3.3 27.195 1.288 31.514 4.589 4.32 8.155-19.146 9.54-19.146 2.748 0 4.584 8.67 3.602 12.448-.982 3.779-13.142 12.747-13.142 15.467 0 2.72 13.142-1.872 17.41-5.169 4.27-3.297 7.624-10.298 8.366-15.906.743-5.608 1.615-21.718.457-55.965s.596-47.132-2.496-61.07c-3.093-13.939-6.873-18.874-6.873-34.998 0-16.123-2.821-27.636-3.722-35.882-.901-8.245.437-12.46-.982-31.743-1.42-19.283-18.673-27.349-31.134-29.694-8.308-1.563-19.436-2.704-33.32-.456l15.504-1.587-21.227-11.132V.507H85.518z"></path>
+        <path id="man-inseam-left-knee-shape" d="M59.932 405.614c-1.042 8.825 1.424 14.398 7.398 16.717 5.974 2.32 11.064 1.415 15.27-2.712"></path>
+        <path id="man-inseam-right-knee-shape" d="M128.632 405.614c-1.042 8.825 1.424 14.398 7.398 16.717 5.974 2.32 11.064 1.415 15.27-2.712"></path>
+        <linearGradient id="linearGradient-9" x1="2.222%" y1="50%" y2="50%">
+            <stop class="area-highlight-fill" offset="0%" stop-color="#09F" stop-opacity="0"></stop>
+            <stop class="area-highlight-fill" offset="40.956%" stop-color="#09F" stop-opacity="0"></stop>
+            <stop class="area-highlight-fill" offset="100%" stop-color="#09F" stop-opacity=".047"></stop>
+        </linearGradient>
+        <linearGradient id="linearGradient-10" x1="0%" y1="50%" y2="50%">
+            <stop class="area-highlight-stroke" offset="0%" stop-color="#80C3F3" stop-opacity="0"></stop>
+            <stop class="area-highlight-stroke" offset="100%" stop-color="#4A90E2"></stop>
+        </linearGradient>
+    </defs>
+    <g id="man-inseam" fill="none" fill-rule="evenodd">
+        <g id="body-mask" transform="translate(57 -253)">
+            <mask id="man-inseam-body-mask" fill="#fff">
+                <use xlink:href="#man-inseam-body-mask-shape"></use>
+            </mask>
+            <g id="dude-arme-unten-offene-hand" stroke="#4D4D4D" stroke-linecap="round" class="body-outline body-fill" mask="url(#man-inseam-body-mask)">
+                <g transform="translate(-6 15)">
+                    <path id="body" fill="#FFF" stroke-linejoin="round" d="M94.518 73.507v24.878L73.29 109.517l15.505 1.587c-13.884-2.248-25.013-1.107-33.32.456-12.462 2.345-29.715 10.41-31.134 29.694-1.42 19.284-.082 23.498-.982 31.743-.901 8.246-3.722 19.759-3.722 35.882 0 16.124-3.78 21.06-6.873 34.998-3.093 13.938-1.339 26.823-2.497 61.07s-.286 50.357.457 55.965c.743 5.608 4.097 12.61 8.366 15.906 4.269 3.297 17.41 7.889 17.41 5.169 0-2.72-12.16-11.688-13.141-15.467-.982-3.778.853-12.448 3.602-12.448 1.384 0 4.95 23.465 9.54 19.146 4.588-4.319 2.261-28.596 1.287-31.514-.973-2.919-8.098-12.546-8.615-15.31-1.42-7.594 5.898-27.018 11.013-47.631s5.546-39.575 6.751-55.229c1.205-15.653 6.17-17.99 8.538-53.909 0 43.272 6.407 47.905 6.407 64.95 0 17.044-3.684 24.03-3.083 33.524s-8.569 35.303-8.569 50.893c0 15.59-.528 51.89 1.174 74.667 1.703 22.777 11.459 48.593 11.459 61.304 0 12.712.892 24.775-.98 36.665-1.874 11.89-3.084 43.132 7.088 72.668 10.173 29.536 10.731 35.73 10.731 52.31 0 16.58-11.695 21.096-11.695 35.928 0 4.403 1.329 4.15 3.986-.76-1.343 6.14-1.47 9.382-.383 9.73 1.089.348 2.805-1.703 5.15-6.153-1.817 5.88-2.126 9.326-.928 10.34 1.796 1.522 4.253.135 6.709-7.276-2.665 7.705-1.081 11.526 1.55 11.526 1.753 0 3.321-3.6 4.704-10.802.134 8.488 1.674 12.557 4.62 12.207 6.63-.789 7.192-12.706 7.192-24.241 0-11.536 2.923-24.208 2.923-27.257 0-3.049-2.377-20.9-4.294-41.947-1.916-21.047 1.642-32.671 1.642-49.734 0-17.064-2.858-23.09-2.858-28.55 0-5.462 2.159-9.154 3.834-25.894 1.676-16.74 1.447-27.604 2.577-38.313 1.13-10.71 4.575-26.791 5.8-51.5.817-16.474.817-28.324 0-35.552 8.972 7.228 8.972 19.078 9.789 35.551 1.225 24.71 4.671 40.792 5.8 51.501 1.13 10.71.902 21.574 2.577 38.313 1.675 16.74 3.834 20.432 3.834 25.893 0 5.462-2.857 11.487-2.857 28.55 0 17.064 3.557 28.688 1.641 49.735s-4.293 38.898-4.293 41.947c0 3.05 2.922 15.721 2.922 27.257 0 11.535.563 23.452 7.192 24.24 2.947.351 4.487-3.718 4.62-12.206 1.383 7.201 2.951 10.802 4.705 10.802 2.63 0 4.215-3.821 1.55-11.526 2.455 7.411 4.912 8.798 6.709 7.277 1.198-1.015.888-4.462-.928-10.341 2.344 4.45 4.06 6.501 5.149 6.153 1.088-.348.96-3.59-.383-9.73 2.658 4.91 3.986 5.163 3.986.76 0-14.832-11.695-19.349-11.695-35.929 0-16.58.559-22.773 10.731-52.309 10.172-29.536 8.963-60.778 7.09-72.668-1.874-11.89-.981-23.953-.981-36.665 0-12.711 9.756-38.527 11.458-61.304 1.703-22.778 1.174-59.077 1.174-74.667 0-15.59-9.17-41.399-8.569-50.893.601-9.495-3.083-16.48-3.083-33.525 0-17.044 6.408-21.677 6.408-64.949 2.368 35.92 7.332 38.256 8.537 53.91 1.205 15.653 1.636 34.615 6.751 55.228 5.116 20.613 12.434 40.037 11.014 47.631-.517 2.764-7.642 12.391-8.616 15.31-.974 2.918-3.3 27.195 1.288 31.514 4.589 4.32 8.155-19.146 9.54-19.146 2.748 0 4.584 8.67 3.602 12.448-.982 3.779-13.142 12.747-13.142 15.467 0 2.72 13.142-1.872 17.41-5.169 4.27-3.297 7.624-10.298 8.366-15.906.743-5.608 1.615-21.718.457-55.965s.596-47.132-2.496-61.07c-3.093-13.939-6.873-18.874-6.873-34.998 0-16.123-2.821-27.636-3.722-35.882-.901-8.245.437-12.46-.982-31.743-1.42-19.283-18.673-27.349-31.134-29.694-8.308-1.563-19.436-2.704-33.32-.456l15.504-1.587-21.227-11.132V73.507H94.518z"></path>
+                    <path id="left-boob" fill="#FFF" stroke-linejoin="round" d="M55.862 155.182c.707 1.914.707 4.173 0 6.779-1.06 3.908 1.134 14.389 9.539 19.976s15.145 5.915 22.45 5.915c4.87 0 11.026-1.972 18.47-5.915" transform="rotate(-11 80.968 171.517)"></path>
+                    <path id="right-boob" fill="#FFF" stroke-linejoin="round" d="M126.198 155.182c.707 1.914.707 4.173 0 6.779-1.061 3.908 1.133 14.389 9.539 19.976 8.405 5.587 15.144 5.915 22.45 5.915 4.87 0 11.026-1.972 18.47-5.915" transform="scale(-1 1) rotate(-11 0 1742.865)"></path>
+                    <path id="head" fill="#FFF" stroke-linejoin="round" d="M137.198 74.945c2.765-3.23 11.748-27.764 7.038-50.955C141.096 8.53 131.457.533 115.318 0c-16.14.533-25.779 8.53-28.919 23.99-4.71 23.19 4.273 47.725 7.039 50.955 2.765 3.23 16.42 11.653 21.88 11.63 5.46.023 19.115-8.4 21.88-11.63z" transform="matrix(-1 0 0 1 230.636 0)"></path>
+                    <path id="crotch" fill="#FFF" stroke-linejoin="round" d="M101.414 346.301c2.75 7.465 7.106 11.275 13.067 11.43 5.96.154 10.874-3.656 14.74-11.43"></path>
+                    <path id="left-knee" fill="#FFF" stroke-linejoin="round" d="M68.932 478.614c-1.042 8.825 1.424 14.398 7.398 16.717 5.974 2.32 11.064 1.415 15.27-2.712"></path>
+                    <path id="right-knee" fill="#FFF" stroke-linejoin="round" d="M137.632 478.614c-1.042 8.825 1.424 14.398 7.398 16.717 5.974 2.32 11.064 1.415 15.27-2.712" transform="matrix(-1 0 0 1 297.7 0)"></path>
+                    <path id="brustbein" d="M75.243 115.978c10.006 1.622 17.288 2.433 21.845 2.433 6.835 0 11.364-1.216 12.213-1.216.849 0 3.054 5.315 5.772 5.315 3.208.119 5.413-5.197 6.262-5.197.849 0 5.378 1.217 12.213 1.217 4.557 0 11.839-.811 21.845-2.433"></path>
+                </g>
+            </g>
+        </g>
+        <g transform="translate(94 120)">
+            <mask id="man-inseam-highlight-mask" fill="#fff">
+                <path d="M0 0h143v314H0z"></path>
+            </mask>
+            <g id="dude-arme-unten-offene-hand" stroke-linecap="round" mask="url(#man-inseam-highlight-mask)">
+                <g transform="translate(-34 -285)">
+                    <g id="body">
+                        <use fill="#09F" fill-opacity=".1" class="body-highlight" xlink:href="#man-inseam-body-shape"></use>
+                        <use stroke="#09F" class="body-highlight-outline" xlink:href="#man-inseam-body-shape"></use>
+                    </g>
+                    <g id="left-knee">
+                        <use stroke="#09F" class="body-highlight-outline" xlink:href="#man-inseam-left-knee-shape"></use>
+                    </g>
+                    <g id="right-knee" transform="matrix(-1 0 0 1 279.7 0)">
+                        <use stroke="#09F" class="body-highlight-outline" xlink:href="#man-inseam-right-knee-shape"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <path id="meassurement" fill="url(#linearGradient-9)" stroke="url(#linearGradient-10)" d="M72 121h210v314H72"></path>
+    </g>
+</svg>
+
+    </div>
+
+    <div class="help-image help-image--female hidden">
+      <svg class="" width="330" height="480" viewBox="0 0 330 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <polygon id="woman-inseam-body-mask-shape" points="58.8896484 380.932617 58.8896484 425.790039 25.4941406 425.790039 25.4941406 20.2851562 225.638672 20.2851562 225.638672 425.790039 189.875 425.790039 189.875 380.932617"></polygon>
+        <path id="woman-inseam-highlight-body-shape" d="M48.952-274.888s3.202 8.688-2.084 16.039c-8.698 10.508-32.686 12.685-43.1 18.367C-6.647-234.799-9.96-223.857-9.96-216.36c.023 10.901-2.093 30.56-2.618 47.92-.525 17.361-1.983 28.868-1.512 32.513.472 3.644-7.375 21.609-8.59 36.126-1.215 14.518 0 43.604-.833 56.71-.235 3.698-.291 4.646-1.105 9.312-.091.522.103 4.065.584 10.63-1.302 7.154-1.953 13.774-1.953 19.862 0 9.131 1.445 21.478 9.158 26.969 3.05 2.17 12.438 9.252 12.438 5.855 0-2.232-11.477-9.246-11.477-19.721 0-3.81 3.315-13.94 5.254-12.207 1.714 1.532 1.294 11.6 2.515 15.805 1.22 4.205 5.486 7.1 5.486 4.205 0-2.895 0-19.292-1.949-29.49-.529-2.77-2.703-7.74-4.01-13.506-.378-1.66-.553-4.46-.528-8.402C-5.347-49.117.151-73.803 5.037-92.954c3.696-14.485 5.28-32.316 6.9-43.684 1.08-7.578 2.472-20.139 4.178-37.681 1.302 21.042 3.482 37.073 6.538 48.094 4.586 16.53 1.892 22.592-7.993 45.658C4.775-57.501.157-29.58 1.628-9.195c1.47 20.384 9.006 61.438 11.729 82.554 2.722 21.117 9.296 39.755 7.332 62.908-1.963 23.154-3.425 36.365 0 56 3.426 19.636 16.464 65.966 16.464 85.35 0 19.383-21.038 34.745-21.038 36.829 0 1.39 1.905.987 5.717-1.208-3.563 4.057-4.676 6.342-3.341 6.856 1.335.513 3.762-.918 7.281-4.295-4.107 4.942-5.42 7.692-3.94 8.25 1.48.558 4.06-1.182 7.74-5.22-3.923 6.195-5.19 9.586-3.8 10.174 1.39.587 4.535-2.383 9.435-8.91-5.894 8.93-6.8 13.394-2.716 13.394 6.126 0 14.179-19.424 18.171-25.72 3.993-6.297 6.159-3.416 8.155-9.388 1.996-5.972-2.344-12.206-2.43-13.871-.16-3.067-3.66-29.57-2.262-52.63 1.398-23.062 3.61-30.044 3.61-50.467s-5.873-29.955-5.873-40.507c0-10.551 3.412-32.968 4.525-59.785C57.499 54.303 59.73 19.465 59.73.132c3.809 4.402 7.413 4.402 10.812 0 2.053 39.866 3.372 66.862 3.958 80.987 1.112 26.817 4.525 49.234 4.525 59.785 0 10.552-5.873 20.084-5.873 40.507s2.212 27.405 3.61 50.466c1.398 23.062-2.103 49.564-2.262 52.63-.086 1.666-4.426 7.9-2.43 13.872 1.996 5.972 4.162 3.091 8.155 9.388 3.992 6.296 12.045 25.72 18.17 25.72 4.084 0 3.18-4.465-2.715-13.393 4.9 6.526 8.045 9.496 9.435 8.909 1.39-.588.123-3.979-3.8-10.174 3.68 4.038 6.26 5.778 7.74 5.22 1.48-.558.167-3.308-3.94-8.25 3.519 3.377 5.946 4.808 7.281 4.295 1.335-.514.221-2.799-3.341-6.856 3.811 2.195 5.717 2.598 5.717 1.208 0-2.084-21.038-17.446-21.038-36.83 0-19.383 13.038-65.713 16.463-85.349 3.426-19.635 1.964-32.846 0-56-1.963-23.153 4.61-41.791 7.333-62.908 2.723-21.116 10.258-62.17 11.73-82.554 1.47-20.384-3.148-48.306-13.033-71.372-9.885-23.066-12.579-29.127-7.993-45.658 3.056-11.021 5.236-27.052 6.538-48.094 1.706 17.542 3.098 30.103 4.178 37.681 1.62 11.368 3.204 29.2 6.9 43.684 4.887 19.151 10.384 43.837 14.136 59.175.025 3.941-.15 6.742-.527 8.402-1.309 5.766-3.482 10.737-4.011 13.506-1.95 10.198-1.95 26.595-1.95 29.49 0 2.895 4.266 0 5.487-4.205 1.22-4.204.8-14.273 2.515-15.805 1.939-1.733 5.254 8.396 5.254 12.207 0 10.475-11.306 17.489-11.306 19.721 0 3.397 9.631-3.817 12.615-6.81 6.857-6.877 8.98-19.356 8.98-28.487 0-6.088-.707-11.884-2.123-17.39.48-6.564.675-10.107.584-10.629-.814-4.666-.87-5.614-1.105-9.313-.833-13.105.382-42.191-.833-56.709-1.215-14.517-9.062-32.482-8.59-36.126.47-3.645-.987-15.152-1.512-32.513-.525-17.36-2.642-37.019-2.618-47.92 0-7.497-3.312-18.44-13.727-24.122-10.414-5.682-34.402-7.859-43.1-18.367-5.286-7.35-2.084-16.04-2.084-16.04"></path>
+        <linearGradient id="woman-inseam-fill-gradient" x1="2.222%" y1="50%" y2="50%">
+            <stop class="area-highlight-fill" offset="0%" stop-color="#09F" stop-opacity="0"></stop>
+            <stop class="area-highlight-fill" offset="40.956%" stop-color="#09F" stop-opacity="0"></stop>
+            <stop class="area-highlight-fill" offset="100%" stop-color="#09F" stop-opacity=".047"></stop>
+        </linearGradient>
+        <linearGradient id="woman-inseam-stroke-gradient" x1="0%" y1="50%" y2="50%">
+            <stop class="area-highlight-stroke" offset="0%" stop-color="#80C3F3" stop-opacity="0"></stop>
+            <stop class="area-highlight-stroke" offset="100%" stop-color="#4A90E2"></stop>
+        </linearGradient>
+    </defs>
+    <g id="woman-inseam" fill="none" fill-rule="evenodd">
+        <g id="lady-arme-unten-offene-hand" stroke="#4D4D4D" transform="translate(41 -273)">
+            <mask id="woman-inseam-body-mask" fill="white">
+                <use xlink:href="#woman-inseam-body-mask-shape"></use>
+            </mask>
+            <path id="body" fill="#FFF" mask="url(#woman-inseam-body-mask)" stroke-linejoin="round" d="M108.008 106.259s3.202 8.688-2.084 16.038c-8.698 10.51-32.686 12.686-43.1 18.368-10.415 5.683-13.727 16.625-13.727 24.122.024 10.9-2.093 30.56-2.618 47.92-.525 17.361-1.983 28.868-1.512 32.513.472 3.644-7.375 21.609-8.59 36.126-1.215 14.518 0 43.604-.833 56.71-.235 3.698-.291 4.646-1.105 9.312-.091.522.103 4.065.584 10.63-1.302 7.153-1.953 13.774-1.953 19.862 0 9.131 1.445 21.477 9.158 26.968 3.05 2.171 12.438 9.253 12.438 5.856 0-2.232-11.477-9.246-11.477-19.721 0-3.81 3.315-13.94 5.254-12.207 1.714 1.532 1.294 11.6 2.515 15.805 1.22 4.205 5.486 7.1 5.486 4.205 0-2.895 0-19.292-1.949-29.49-.529-2.77-2.702-7.74-4.01-13.506-.378-1.66-.553-4.46-.528-8.402 3.752-15.338 9.25-40.024 14.136-59.175 3.696-14.485 5.28-32.316 6.9-43.684 1.08-7.578 2.472-20.139 4.178-37.681 1.302 21.042 3.482 37.073 6.538 48.094 4.586 16.53 1.892 22.592-7.993 45.658-9.885 23.066-14.503 50.988-13.032 71.372 1.47 20.384 9.006 61.438 11.729 82.554 2.722 21.117 9.296 39.754 7.333 62.908-1.964 23.154-3.426 36.365 0 56 3.425 19.636 16.463 65.965 16.463 85.349s-21.038 34.746-21.038 36.83c0 1.39 1.905.987 5.717-1.208-3.562 4.057-4.676 6.342-3.341 6.856 1.335.513 3.762-.918 7.281-4.295-4.107 4.942-5.42 7.692-3.94 8.25 1.48.558 4.06-1.182 7.74-5.22-3.923 6.195-5.19 9.586-3.8 10.174 1.39.587 4.535-2.383 9.435-8.91-5.894 8.93-6.8 13.394-2.716 13.394 6.126 0 14.179-19.424 18.171-25.72 3.993-6.297 6.159-3.416 8.155-9.388 1.996-5.972-2.344-12.206-2.43-13.871-.16-3.067-3.66-29.57-2.262-52.63 1.398-23.062 3.61-30.044 3.61-50.467s-5.873-29.955-5.873-40.507c0-10.551 3.413-32.968 4.525-59.785 1.112-26.816 3.344-61.654 3.344-80.987 3.809 4.402 7.413 4.402 10.812 0 2.053 39.866 3.373 66.862 3.958 80.987 1.112 26.817 4.525 49.234 4.525 59.785 0 10.552-5.873 20.084-5.873 40.507s2.212 27.405 3.61 50.466c1.398 23.061-2.103 49.564-2.262 52.63-.086 1.666-4.426 7.9-2.43 13.872 1.996 5.972 4.162 3.091 8.155 9.388 3.992 6.296 12.045 25.72 18.17 25.72 4.084 0 3.18-4.465-2.715-13.393 4.9 6.526 8.045 9.496 9.435 8.909 1.39-.588.123-3.979-3.8-10.174 3.68 4.038 6.26 5.778 7.74 5.22 1.48-.558.167-3.308-3.94-8.25 3.519 3.377 5.946 4.808 7.281 4.295 1.335-.514.221-2.8-3.341-6.856 3.812 2.195 5.717 2.597 5.717 1.208 0-2.084-21.038-17.446-21.038-36.83 0-19.384 13.038-65.713 16.463-85.349 3.426-19.635 1.964-32.846 0-56-1.963-23.154 4.61-41.791 7.333-62.908 2.723-21.116 10.258-62.17 11.73-82.554 1.47-20.384-3.148-48.306-13.033-71.372-9.885-23.066-12.579-29.127-7.993-45.658 3.056-11.021 5.236-27.052 6.538-48.094 1.706 17.542 3.098 30.103 4.178 37.681 1.62 11.368 3.204 29.2 6.9 43.684 4.887 19.151 10.384 43.837 14.136 59.175.025 3.941-.15 6.742-.527 8.402-1.309 5.766-3.482 10.736-4.011 13.506-1.95 10.198-1.95 26.595-1.95 29.49 0 2.895 4.266 0 5.487-4.205 1.22-4.204.8-14.273 2.515-15.805 1.939-1.734 5.254 8.396 5.254 12.207 0 10.475-11.306 17.489-11.306 19.721 0 3.397 9.631-3.817 12.615-6.81 6.857-6.877 8.98-19.356 8.98-28.487 0-6.088-.707-11.884-2.123-17.39.48-6.564.675-10.107.584-10.629-.814-4.666-.87-5.614-1.105-9.313-.833-13.105.382-42.191-.833-56.709-1.215-14.517-9.062-32.482-8.59-36.126.47-3.645-.987-15.152-1.512-32.513-.525-17.36-2.642-37.02-2.618-47.92 0-7.497-3.312-18.44-13.727-24.122-10.414-5.682-34.402-7.859-43.1-18.368-5.286-7.35-2.084-16.038-2.084-16.038" class="body-outline body-fill"></path>
+        </g>
+        <g id="woman-inseam-highlight" transform="translate(100 108)">
+            <mask id="woman-inseam-highlight-mask" fill="white">
+                <rect width="133" height="335" x="0" y="0"></rect>
+            </mask>
+            <g id="woman-inseam-body" stroke-linecap="round" mask="url(#woman-inseam-highlight-mask)">
+                <use fill="#09F" fill-opacity=".1" class="body-highlight" xlink:href="#woman-inseam-highlight-body-shape"></use>
+                <use stroke="#09F" class="body-highlight-outline" xlink:href="#woman-inseam-highlight-body-shape"></use>
+            </g>
+        </g>
+        <path id="meassurement" fill="url(#woman-inseam-fill-gradient)" stroke="url(#woman-inseam-stroke-gradient)" d="M72 107.5h200v335H72"></path>
+    </g>
+</svg>
+
+    </div>
+
+    <figcaption>Inner leg length</figcaption>
+
+    <div class="help">
+      <a class="help__bubble">?</a>
+      <article class="help__popup hidden">
+        <button class="help__popup__close close-button" alt="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <path d="M19.7 4.3c-.4-.4-1-.4-1.4 0L12 10.6 5.7 4.3c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l6.3 6.3-6.3 6.3c-.4.4-.4 1 0 1.4.2.2.4.3.7.3s.5-.1.7-.3l6.3-6.3 6.3 6.3c.2.2.5.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4L13.4 12l6.3-6.3c.4-.4.4-1 0-1.4z"></path>
+</svg>
+
+        </button>
+
+        <h2>Measure inner leg length:</h2>
+
+        <p>Stand straight up with your back against a wall. Clench a bubble level (or a book) between your legs.</p>
+
+<p>With both hands (one in front of you, the other behind) pull the level (or the book) up between your legs <strong>simulating the pressure of sitting on a bike saddle</strong>.</p>
+
+<p>The bubble level should <strong>stay level</strong> during measurement. Now measure the distance between the level and the ground. That’s your inner leg length.</p>
+
+      </article>
+    </div>
+  </figure>
+
+  <nav class="button-bar">
+  <a href="#" id="btn--inseam" class="button button--next-screen">
+    Next
+  </a>
+</nav>
+
+
+  <a class="toggle-help">
+  <span class="front">?</span>
+  <span class="back">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+      <polygon points="6.7,14.7 8.1,13.3 3.8,9 16,9 16,7 3.8,7 8.1,2.7 6.7,1.3 0,8 "></polygon>
+    </svg>
+  </span>
+</a>
+
+</article>
+<!-- end screen -->
+
+      
+
+<article id="screen--result" class="onlineSizer__screen onlineSizer__screen--result" hidden="" loading="">
+  <nav class="restart-session-message just-restart-button">
+    <span>Body data from previous session</span>
+    <button id="restart-session">Restart</button>
+  </nav>
+
+  <div class="loading-wheel">
+    <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>
+        wheel
+    </title>
+    <defs>
+        <circle id="a" cx="22" cy="22" r="22"></circle>
+        <circle id="b" cx="22" cy="22" r="3"></circle>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use xlink:href="#a"></use>
+        <circle class="wheel-part--stroke" cx="22" cy="22" r="21.5"></circle>
+        <circle class="wheel-part--stroke" cx="22" cy="22" r="17.5"></circle>
+        <path id="spikes" d="M22 23V4.493m-.5 18.373l9.253-16.027M21.134 22.5l16.027-9.253M21 22h18.507m-18.373-.5l16.027 9.253M21.5 21.134l9.253 16.027M22 21v18.507m.5-18.373l-9.253 16.027M22.866 21.5L6.839 30.753M23 22H4.493m18.373.5L6.839 13.247M22.5 22.866L13.247 6.839" class="wheel-part--stroke" stroke-linecap="square"></path>
+        <use xlink:href="#b"></use>
+        <circle class="wheel-part--stroke" cx="22" cy="22" r="2.5"></circle>
+        <circle class="wheel-part--fill" cx="22" cy="22" r="1"></circle>
+    </g>
+</svg>
+
+  </div>
+
+  <div class="screen__content">
+    <div id="result-content--regular">
+      <h1 class="resultHeadline--fit">We recommend this size for your <span class="bike-name">SCOTT Spark 970 Bike</span></h1>
+      <h1 class="resultHeadline--sizeOutOfRange"><span class="bike-name">SCOTT Spark 970 Bike</span> does not fit your body size</h1>
+
+      <div class="row">
+        <main class="results">
+          <ul class="results__list"></ul>
+          <figure class="exact-size">
+            <span class="ruler-mark"></span>
+            <span class="ruler-mark"></span>
+            <span class="ruler-mark"></span>
+            <span class="ruler-mark"></span>
+            <span class="ruler-mark"></span>
+            <span class="ruler-mark"></span>
+            <span class="ruler-mark"></span>
+            <span class="ruler-mark"></span>
+            <span class="ruler-mark"></span>
+          </figure>
+
+          <div id="size-marker" style="display: none">
+            <span class="size-marker--fit">Your exact size</span>
+            <span class="size-marker--sizeOutOfRange">Size out of range</span>
+            <span class="size-marker--sizeSoldOut">Unfortunately, this size is sold out</span>
+          </div>
+        </main>
+
+        <figure class="bike-image">
+          <!-- filled by script -->
+        <img src="https://dfp2hfrf3mn0u.cloudfront.net/269/269761_1431539_png_overview_12.png" alt="SCOTT Spark 970 Bike"></figure>
+      </div>
+
+    </div>
+  </div>
+
+  <nav class="button-bar">
+    <a id="button--finish" class="button button--finish">SAVE AND CLOSE</a>
+
+    <a id="button--sizeOutOfRange" class="button button--finish">
+      Select size anyway
+    </a>
+
+    <a id="button--sizeSoldOut" class="button button--finish">
+      Show alternatives
+    </a>
+  </nav>
+</article>
+<!-- end screen -->
+
+    </main>
+  </div>
+</div>
+
+
+  <link rel="stylesheet" href="https://scott.onlinesizer.de/assets/css/onlinesizer.css">
+
+</div>
+        <button id="trigger-onlineSizer" class="btn btn-default">Find your size</button>
+        <script src="/_ui/responsive/common/js/smartfit/smartfit.js"></script>
+    </div>
 <div class="stock-and-cta">
 	<b class="productStockLevel">Available in the future</b>
 		
@@ -1779,6 +2373,43 @@ data-options='{"autocompleteUrl" : "/gb/en/search/autocomplete/SearchBox","minCh
     </div>
 </div>
 </section>
+
+
+<!-- Start Photoslurp Embed Code -->
+<h3 class="heading-center">#scottbikes</h3>
+<div id="scott-carousel-product" class="ps-container" style="max-width: 1200px !important; margin: 0 auto !important;" >
+        <script data-type="photoslurp">
+          if(!photoSlurpWidgetSettings) {
+            var photoSlurpWidgetSettings = {};
+          }
+
+          (function() {
+       photoSlurpWidgetSettings['scott-carousel-product'] = {
+              widgetId: 'product',
+              widgetType: 'carousel',
+              albumId: 1281,
+              theme: 'modern',
+              productId: 'SCOTT SPARK 970 BIKE',
+              lang: 'en', 
+              pageLimit: 12,
+              thumbOverlay: true,
+              shopThisLookText: 'Shop it now',
+              ctaButton: 'Buy',
+              visibleProducts: 2,  
+              debug: true
+            };
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = '//static.photoslurp.com/widget/v3/widget_loader.js';
+        var entry = document.getElementsByTagName('script')[0];
+        entry.parentNode.insertBefore(script, entry);
+})();
+        </script>
+
+          
+        </div>
+      </div>
+<!-- End Photoslurp Embed Code -->
         <aside class="yCmsContentSlot owl-related related_products container">
 <div class="row">
 	<div class="col-sm-12">
@@ -2340,7 +2971,7 @@ data-options='{"autocompleteUrl" : "/gb/en/search/autocomplete/SearchBox","minCh
 
 <div class="container">
     <div id="footer--logo" class="row">
-        <div class="col-xs-12"><img src="/_ui/responsive/theme-scott/images/logo_mini.png" alt="" class="center-block">
+        <div class="col-xs-12"><img src="assets/img/logo_mini.png" alt="" class="center-block">
         </div>
     </div>
 </div>
@@ -2590,7 +3221,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		
 	/*]]>*/
 </script>
-<script type="text/javascript" src="/_ui/shared/js/generatedVariables.js"></script><script type="text/javascript" src="https://use.typekit.net/mcr5kql.js"></script>
+<script type="text/javascript" src="js/generatedVariables.js"></script><script type="text/javascript" src="https://use.typekit.net/mcr5kql.js"></script>
 	<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
 <script src="https://apis.google.com/js/platform.js" defer></script>
 <script type="text/javascript">
@@ -2600,7 +3231,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   document.documentElement.className += " touch";
   }
 </script>
-<script type="text/javascript" src="/_ui/responsive/common/js/bundle.min.js" ></script>
+<script type="text/javascript" src="js/bundle.min.js" ></script>
 
 		<script type="text/javascript" src="https://scott.onlinesizer.de/assets/js/onlinesizer.js"></script>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC59RdTuXdFsC-bQYd6tEIJK7_JZOBH094&sensor=false&language=en&libraries=places"></script>

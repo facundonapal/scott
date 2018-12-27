@@ -5,14 +5,13 @@
 
 #tab-heading {
     text-transform: uppercase;
-    font-size: 24px;
-    line-height: 30px;
-    letter-spacing: 3px;
-    font-family: 'minion-pro';
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 4rem;
+    line-height: 1.1;
+    letter-spacing: .2rem;
+    font-family: "brandon-grotesque",Arial,Helvetica,sans-serif;;
+    font-weight: 600;
     margin: 75px 0 59px 0;
+    text-align: center;
 }
 
 .wrapper-widgets {
@@ -45,12 +44,12 @@
 }
 
 .tab-style {
-    color: #181818;
-    font-size: 14px;
-    font-family: 'minion-pro';
-    letter-spacing: 3.5px;
+    color: rgb(102, 102, 102);
+    font-size: 1.8rem;
+    font-family: "open-sans","Open Sans",Helvetica,Arial,sans-serif;
+    letter-spacing: 1.4px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 
@@ -67,25 +66,22 @@
 }
 
 .ps-load-more-button {
-    /* display: block !important; */
-    padding: 7px 15px !important;
-    font-size: 12px !important;
-    text-transform: uppercase !important
-;    border: solid 1px #181818 !important;
-    text-decoration: none !important;
-    margin-top: 15px !important;
-    text-align: center !important;
-    color: #181818 !important;
-    letter-spacing: 1px !important;
-    font-weight: 700 !important;
-    font-family: 'proxima-nova' !important;
-    text-shadow: none !important;
-    border-radius: 0px !important;
-    background: none !important;
-    min-width: 120px !important;
+    color: #fff; !important;
+    background-color: #0099ff !important;
+    border: 1px solid #008ae6 !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    font-size: 1.4rem !important;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "brandon-grotesque",Arial,Helvetica,sans-serif !important;
+    letter-spacing: .2rem !important;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+    border-radius: 0 !important;
 }
 
 .ps-load-more-button:hover {
-     color: #fff !important;
-    background: #181818 !important;
+   background: #007acc !important;
+   border-color: #0065a8 !important;
 }
